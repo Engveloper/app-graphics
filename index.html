@@ -7,12 +7,33 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        nav{
+            background-color: #d4cbcb;
+            padding: 5px;
+        }
+        nav ul li {
+            list-style: none;
+        }
+        nav ul li a{
+            color: black;
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        .ads{
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+    </style>
     <nav>
         <ul>
-            <li>Inicio</li>
-            <li>Perros</li>
-            <li>Gatos</li>
-            <li>Acerca de</li>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Perros</a></li>
+            <li><a href="">Gatos</a></li>
+            <li><a href="">Acerca de</a></li>
         </ul>
     </nav>
     <h1>Mascotas al  poder</h1>
@@ -24,14 +45,16 @@
         <div class="right-arrow"></div>
     </div>
 
-    <div class="ad1">
-        <img src="" alt="">
-    </div>
-    <div class="ad2">
-        <img src="" alt="">
-    </div>
-    <div class="ad3">
-        <img src="" alt="">
+    <div class="ads">
+        <div class="ad1">
+            <img src="img/1.jpg" alt="" width="300">
+        </div>
+        <div class="ad2">
+            <img src="img/2.jpg" alt="" width="300">
+        </div>
+        <div class="ad3">
+            <img src="img/3.jpg" alt="" width="300">
+        </div>
     </div>
 
     <footer>footer</footer>
