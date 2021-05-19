@@ -1,6 +1,5 @@
-const main = document.getElementById('actual-page');
-console.log(main);
-var ajax = new XMLHttpRequest();
-ajax.open("GET", "../pages/main.html", false);
-ajax.send()
-main.innerHTML = ajax.responseText;
+import { getContainerSPA, getPage } from './util.js'
+
+const main = getContainerSPA();
+const page = await getPage("../pages/main.html");
+main.innerHTML = page;

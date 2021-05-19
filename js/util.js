@@ -4,6 +4,11 @@ export function removeChilds(nodeElement){
     }
 }
 
-export function innerHTML(nodeElement, html){
-    nodeElement.innerHTML(html);
+export function getContainerSPA(){
+    return document.getElementById('actual-page');
+}
+
+export async function getPage(location){
+    const f = await fetch(location);
+    return await f.text();
 }
