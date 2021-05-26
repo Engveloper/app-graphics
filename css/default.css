@@ -6,6 +6,7 @@
 
 body {
   background-color: #ececec;
+  font-family: 'Roboto', sans-serif, serif;
 }
 
 header {
@@ -13,7 +14,9 @@ header {
   align-items: center;
   justify-content: space-around;
   padding: 10px;
-  background-color: white;
+  background-color: #4ABDAC;
+  color: white;
+  height: 56px;
 }
 header .left-menu {
   display: flex;
@@ -26,12 +29,13 @@ header .right-menu {
 nav {
   padding: 5px;
   flex-basis: 30%;
+  color: white;
 }
 nav ul li {
   list-style: none;
 }
 nav ul li a {
-  color: black;
+  color: white;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
@@ -45,8 +49,31 @@ nav ul {
   gap: 30px;
   justify-content: center;
 }
+.products {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.pd .image {
+  width: 300px;
+  height: 200px;
+  background-color: #585555;
+}
+.pd .description {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+.pd .price {
+  margin-top: 6px;
+  font-size: 12px;
+}
+.pd .price > span {
+  font-weight: lighter;
+  color: #585555;
+}
 .logo {
-  width: 90px;
+  width: 50px;
 }
 .bars-menu {
   color: black;
@@ -57,7 +84,7 @@ nav ul {
   position: relative;
 }
 i {
-  font-size: 36px;
+  font-size: 26px;
 }
 .user-login span {
   position: absolute;
@@ -65,8 +92,15 @@ i {
   left: -16px;
   width: 70px;
 }
+
 .cart {
   margin-right: 20px;
+}
+
+.cart i {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .slider {
   margin-top: 20px;
@@ -114,6 +148,12 @@ footer {
   margin-right: 30px;
 }
 
+.searchbox i {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .searchbox input {
   border-radius: 5px;
   padding: 5px;
@@ -121,9 +161,57 @@ footer {
 }
 
 button.primary {
+  background-color: white;
+  color: #4ABDAC;
+  border-radius: 5px;
+  padding: 5px;
+  border: solid white 1px;
+  width: 90px;
+}
+
+button.secondary {
   background-color: #4ABDAC;
   color: white;
   border-radius: 5px;
   padding: 5px;
   border: solid white 1px;
+  width: 90px;
+}
+
+.login-btn {
+  height: 30px;
+  width: 90px;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.login-container {
+  width: 50%;
+}
+
+.login-container h1 {
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: white;
+  padding: 36px;
+}
+
+.login-form input {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 90%;
+}
+
+.login-aside {
+  width: 50%;
+  height: 100%;
 }

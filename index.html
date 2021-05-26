@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="resources/fontawesome/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
@@ -15,11 +17,11 @@
         </div>
       <nav>
         <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Perros</a></li>
-          <li><a href="">Gatos</a></li>
-          <li><a href="">Servicios</a></li>
-          <li><a href="">Acerca de</a></li>
+          <li><a href|preventDefault="">Inicio</a></li>
+          <li><a href|preventDefault="">Perros</a></li>
+          <li><a href|preventDefault="">Gatos</a></li>
+          <li><a href|preventDefault="">Servicios</a></li>
+          <li><a href|preventDefault="">Acerca de</a></li>
         </ul>
       </nav>
       <div class="right-menu">
@@ -30,38 +32,20 @@
           <div class="cart">
             <i class="fas fa-shopping-cart"></i>
           </div>
-          <button class="primary">Mi Cuenta</button>
+          <button class="primary" id="accountBtn" onclick="getLogion()">Mi Cuenta</button>
       </div>
     </header>
 
-    <div class="slider">
-      <div class="inner-slider">
-        <img src="img/banner.jpg" class="slider_img" alt="" />
-      </div>
-      <div class="left-arrow"></div>
-      <div class="right-arrow"></div>
-    </div>
+    <div id="actual-page">
 
-    <h2 class="title">Nuestros Servicios</h2>
-
-    <div class="ads">
-      <div class="ad1">
-        <img src="img/1.jpg" alt="" width="300" />
-      </div>
-      <div class="ad2">
-        <img src="img/2.jpg" alt="" width="300" />
-      </div>
-      <div class="ad3">
-        <img src="img/3.jpg" alt="" width="300" />
-      </div>
     </div>
 
     <footer>
       <h3>Nuestras redes sociales</h3>
       <ul class="social-networks">
-        <li><img src="img/icons/facebook.png" alt=""></li>
-        <li><img src="img/icons/instagram.png" alt=""></li>
-        <li><img src="img/icons/twitter.png" alt=""></li>
+        <li><img src="img/icons/facebook.png" alt="facebook"></li>
+        <li><img src="img/icons/instagram.png" alt="instagram"></li>
+        <li><img src="img/icons/twitter.png" alt="twitter"></li>
       </ul>
       <div class="copyright">
         <h3>© Copyright 2021</h3>
@@ -69,4 +53,6 @@
       </div>
     </footer>
   </body>
+  <script src="js/main.js" defer>
+  </script>
 </html>
