@@ -1,10 +1,4 @@
-import { getContainerSPA, getPage } from './util.js'
-
 const main = getContainerSPA();
-
-getPage("../pages/main.html").then((response) => {
-    main.innerHTML = response
-})
 
 const accountBtn = document.querySelector('#accountBtn')
 
@@ -14,3 +8,32 @@ accountBtn.addEventListener('click', (event) => {
         console.log('test')
     })
 })
+
+function getContainerSPA(){
+    return document.getElementById('actual-page');
+}
+
+async function getPage(location){
+    const f = await fetch(location);
+    return await f.text();
+}
+
+async function getHome(){
+    const main = getContainerSPA();
+    const page = await getPage("../pages/main.html");
+    main.innerHTML = page;
+}
+
+async function getLogin(){
+    const main = getContainerSPA();
+    const page = await getPage("../pages/login.html");
+    main.innerHTML = page;
+}
+
+async function getSignUp(){
+    const main = getContainerSPA();
+    const page = await getPage("../pages/signup.html");
+    main.innerHTML = page;
+}
+
+getHome();

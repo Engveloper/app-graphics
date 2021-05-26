@@ -17,11 +17,11 @@
         </div>
       <nav>
         <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Perros</a></li>
-          <li><a href="">Gatos</a></li>
-          <li><a href="">Servicios</a></li>
-          <li><a href="">Acerca de</a></li>
+          <li><a href|preventDefault="">Inicio</a></li>
+          <li><a href|preventDefault="">Perros</a></li>
+          <li><a href|preventDefault="">Gatos</a></li>
+          <li><a href|preventDefault="">Servicios</a></li>
+          <li><a href|preventDefault="">Acerca de</a></li>
         </ul>
       </nav>
       <div class="right-menu">
@@ -32,7 +32,7 @@
           <div class="cart">
             <i class="fas fa-shopping-cart"></i>
           </div>
-          <button class="primary" id="accountBtn">Mi Cuenta</button>
+          <button class="primary" id="accountBtn" onclick="getLogion()">Mi Cuenta</button>
       </div>
     </header>
 
@@ -53,6 +53,6 @@
       </div>
     </footer>
   </body>
-  <script type="module" src="js/main.js" defer>
+  <script src="js/main.js" defer>
   </script>
 </html>
