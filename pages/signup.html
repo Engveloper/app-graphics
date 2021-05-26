@@ -4,9 +4,13 @@
             <h1>Crea una cuenta</h1>
     
             <form action="/login" class="login-form">
-                <input type="text" name="email" placeholder="Correo Electrónico">
-                <input type="password" name="password" id="password" placeholder="Contraseña">
-                <button class="secondary login-btn">Crear cuenta</button>
+                <div class="flex">
+                    <input type="text" name="nombres" placeholder="Nombres" class="w-1-2">
+                    <input type="text" name="apellidos" placeholder="Apellidos" class="w-1-2 ml-4">
+                </div>
+                <input type="text" name="email" placeholder="Correo Electrónico" class="flex w-full">
+                <input type="password" name="password" id="password" placeholder="Contraseña" class="flex w-full">
+                <button class="secondary login-btn">Registrarse</button>
             </form>
         </div>
     </div>

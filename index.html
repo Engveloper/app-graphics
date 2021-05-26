@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/beta.css" />
     <link rel="stylesheet" href="resources/fontawesome/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap" rel="stylesheet">
@@ -13,11 +14,11 @@
   <body>
     <header>
         <div class="left-menu">
-            <img src="img/logo.png" alt="" class="logo" />
+            <img src="img/logo.png" alt="" class="logo" onclick="getHome()"/>
         </div>
       <nav>
         <ul>
-          <li><a href|preventDefault="">Inicio</a></li>
+          <li><a href|preventDefault="" onclick="getHome()">Inicio</a></li>
           <li><a href|preventDefault="">Perros</a></li>
           <li><a href|preventDefault="">Gatos</a></li>
           <li><a href|preventDefault="">Servicios</a></li>
@@ -32,7 +33,7 @@
           <div class="cart">
             <i class="fas fa-shopping-cart"></i>
           </div>
-          <button class="primary" id="accountBtn" onclick="getLogion()">Mi Cuenta</button>
+          <button class="primary" id="accountBtn" onclick="getLogin()">Mi Cuenta</button>
       </div>
     </header>
 
