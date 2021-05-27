@@ -118,9 +118,17 @@ i {
 footer {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  margin-top: 30px;
+  justify-content: space-around;
   background-color: #f1f1f1;
+  margin-top: 30px;
+  padding: 50px;
+  gap: 20px;
+}
+
+footer .left-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding: 50px;
 }
 
