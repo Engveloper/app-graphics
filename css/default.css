@@ -118,9 +118,17 @@ i {
 footer {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  margin-top: 30px;
+  justify-content: space-around;
   background-color: #f1f1f1;
+  margin-top: 30px;
+  padding: 50px;
+  gap: 20px;
+}
+
+footer .left-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding: 50px;
 }
 
@@ -173,14 +181,11 @@ button.secondary {
   background-color: #4ABDAC;
   color: white;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   border: solid white 1px;
-  width: 90px;
 }
 
 .login-btn {
-  height: 30px;
-  width: 90px;
   margin-top: 20px;
 }
 
@@ -191,7 +196,19 @@ button.secondary {
 }
 
 .login-container {
-  width: 50%;
+  width: 48%;
+  margin-right: 4%;
+  position: relative;
+}
+
+.login-container::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: black;
+  right: -4%;
+  top: 0;
 }
 
 .login-container h1 {
@@ -212,6 +229,49 @@ button.secondary {
 }
 
 .login-aside {
-  width: 50%;
+  width: 48%;
   height: 100%;
+  position: relative;
+}
+
+.login-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.login-images .cat-img {
+  width: 90%;
+}
+
+.login-images .first-column {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.login-images .second-column {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.login-images .dog-cat-img {
+  display: block;
+  width: 90%;
+}
+
+.login-images .dog-img {
+  display: block;
+  width: 90%;
+  margin-top: 40px;
+}
+
+.register-title {
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+}
+
+.register-link {
+  color: #4ABDAC;
+  font-weight: bolder;
 }
