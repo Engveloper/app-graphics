@@ -1,0 +1,28 @@
+/*mobile screen*/
+@media screen and (max-width: 480px) {
+    body header {
+        width: 100%;
+    }
+    nav {
+        display: none;
+    }
+    #accountBtn {
+        display: none;
+    }
+    .searchbox {
+        margin: 0;
+    }
+    .searchbox input {
+        width: 80%;
+    }
+}
+
+/*tablets screen*/
+@media screen and (max-width: 768px) {
+
+}
+
+/*small laptops screen*/
+@media screen and (max-width: 1024px) {
+
+}

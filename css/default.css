@@ -110,6 +110,10 @@ i {
   justify-content: center;
 }
 
+.inner-slider img {
+  width: 80%;
+}
+
 .title {
   text-align: center;
   margin: 20px 0;
