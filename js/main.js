@@ -1,11 +1,28 @@
+import {loadProducts} from './load-products.js'
+
 const main = getContainerSPA();
+
+const navigation = {
+    Inicio: getHome,
+    Productos: getProducts,
+}
+
+const navLinks = document.querySelectorAll('nav li a')
+
+navLinks.forEach((navLink) => {
+    navLink.addEventListener('click', (event) => {
+        event.preventDefault()
+        const name = navLink.innerHTML
+        const navigate = navigation[name]
+        navigate && navigate()
+    })
+})
 
 const accountBtn = document.querySelector('#accountBtn')
 
 accountBtn.addEventListener('click', (event) => {
     getPage("../pages/login.html").then((response) => {
         main.innerHTML = response
-        console.log('test')
     })
 })
 
@@ -34,6 +51,13 @@ async function getSignUp(){
     const main = getContainerSPA();
     const page = await getPage("../pages/signup.html");
     main.innerHTML = page;
+}
+
+async function getProducts(){
+    const main = getContainerSPA();
+    const page = await getPage("../pages/products.html");
+    main.innerHTML = page;
+    loadProducts()
 }
 
 getHome();
