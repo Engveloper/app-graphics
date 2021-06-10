@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./favicon.ico" type="image/vnd.microsoft.icons">
+  <link rel="stylesheet" href="css/default.css" />
+  <link rel="stylesheet" href="css/clock.css" />
+  <link rel="stylesheet" href="css/beta.css" />
+  <link rel="stylesheet" href="resources/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="resources/animated-event-calendar/simple-calendar.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>Tienda de mascotas</title>
+</head>
+
+<body>
+  <header>
+    <div class="left-menu">
+      <img src="img/logo.png" alt="" class="logo" onclick="window.location.href = '/'" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/">Mascotas</a></li>
+        <li><a href="/products.html">Productos</a></li>
+        <li><a href="/">Servicios</a></li>
+        <li><a href="/">Acerca</a></li>
+      </ul>
+    </nav>
+    <div class="right-menu">
+      <div class="searchbox">
+        <input type="text" name="search">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="cart">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+      <button class="primary" id="accountBtn" onclick="window.location.href = '/login.html'">Mi Cuenta</button>
+    </div>
+  </header>
+<div class="container">
+    <div class="login-container">
+        <div class="card">
+            <h1>Iniciar Sesión</h1>
+    
+            <form action="/login" class="login-form">
+                <input type="text" name="email" placeholder="Correo Electrónico">
+                <input type="password" name="password" id="password" placeholder="Contraseña">
+                <button class="secondary login-btn">Iniciar sesión</button>
+            </form>
+        </div>
+    </div>
+    <div class="login-aside">
+        <div class="">
+            <div class="login-images">
+                <div class="first-column">
+                    <img src="../img/login/gatos.jpg" class="cat-img" alt="">
+                    <div class="register-title">
+                        <h2>Si aun no tienes cuenta</h2>
+                        <a href="signup.html" class="register-link">Crea una</a>
+                    </div>
+                </div>
+                <div class="second-column">
+                    <img src="../img/login/perroygato.jpg" class="dog-cat-img" alt="">
+                    <img src="../img/login/perrito.jpg" class="dog-img" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="left-footer">
+      <h3>Nuestras redes sociales</h3>
+      <ul class="social-networks">
+        <li><img src="img/icons/facebook.png" alt="facebook"></li>
+        <li><img src="img/icons/instagram.png" alt="instagram"></li>
+        <li><img src="img/icons/twitter.png" alt="twitter"></li>
+      </ul>
+      <div class="copyright">
+        <h3>© Copyright 2021</h3>
+        <h3>Moises - Alejandra - Engels</h3>
+      </div>
+    </div>
+    <div class="middle-footer">
+      <div class="clock">
+        <div class="container">
+          <span class="hours">00</span>
+        </div>
+        <div class="container">
+          <span class="minutes">00</span>
+        </div>
+        <div class="container">
+          <span class="seconds">00</span>
+        </div>
+      </div>
+    </div>
+    <div class="right-footer">
+      <div id="calendar"></div>
+    </div>
+  </footer>
+</body>
+<script src="js/clock.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="resources/animated-event-calendar/jquery.simple-calendar.min.js"></script>
+<script src="js/calendar.js"></script>
+
+
+</html>
