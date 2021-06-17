@@ -25,11 +25,11 @@
     </div>
     <nav>
       <ul>
-        <li><a href|preventDefault="">Inicio</a></li>
-        <li><a href|preventDefault="">Mascotas</a></li>
-        <li><a href|preventDefault="">Productos</a></li>
-        <li><a href|preventDefault="">Servicios</a></li>
-        <li><a href|preventDefault="">Acerca</a></li>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/">Mascotas</a></li>
+        <li><a href="/products.html">Productos</a></li>
+        <li><a href="/">Servicios</a></li>
+        <li><a href="/aboutus.html">Acerca</a></li>
       </ul>
     </nav>
     <div class="right-menu">
@@ -40,12 +40,54 @@
       <div class="cart">
         <i class="fas fa-shopping-cart"></i>
       </div>
-      <button class="primary" id="accountBtn" onclick="getLogin()">Mi Cuenta</button>
+      <button class="primary" id="accountBtn" onclick="window.location.href = '/login.html'">Mi Cuenta</button>
     </div>
   </header>
 
   <div id="actual-page">
-
+    <div id="body-main">
+      <div class="slider">
+          <div class="inner-slider">
+            <img src="img/banner.jpg" class="slider_img" alt="" />
+          </div>
+          <div class="left-arrow"></div>
+          <div class="right-arrow"></div>
+        </div>
+      
+        <h2 class="title">Nuestros Servicios</h2>
+      
+        <div class="ads">
+          <div class="ad1">
+            <img src="img/1.jpg" alt="" width="300" />
+          </div>
+          <div class="ad2">
+            <img src="img/2.jpg" alt="" width="300" />
+          </div>
+          <div class="ad3">
+            <img src="img/3.jpg" alt="" width="300" />
+          </div>
+        </div>
+      
+        <h2 class="title">Nuestros Productos</h2>
+      
+        <div class="products">
+          <div class="pd">
+            <div class="image"></div>
+            <div class="description">Producto 1</div>
+            <div class="price">C$ 100.00 <span>(400 mg)</span></div>
+          </div>
+          <div class="pd">
+            <div class="image"></div>
+            <div class="description">Producto 1</div>
+            <div class="price">C$ 100.00 <span>(400 mg)</span></div>
+          </div>
+          <div class="pd">
+            <div class="image"></div>
+            <div class="description">Producto 1</div>
+            <div class="price">C$ 100.00 <span>(400 mg)</span></div>
+          </div>
+        </div>
+      </div>
   </div>
 
   <footer>
@@ -79,7 +121,6 @@
     </div>
   </footer>
 </body>
-<script src="js/main.js" defer type="module"></script>
 <script src="js/clock.js" defer></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

@@ -48,10 +48,12 @@ function getProductHtml({image, name, price, presentation}) {
     `
 }
 
-export function loadProducts() {
+function loadProducts() {
     const productsContainer = document.querySelector('.products-container .products')
     products.forEach((product) => {
         const productHtml = getProductHtml(product)
         productsContainer.innerHTML += productHtml
     })
 }
+
+loadProducts()
